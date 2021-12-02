@@ -1,0 +1,98 @@
+*{
+-webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  body {
+    margin: 0 auto;
+    font-family: ‘Poppins’, sans-serif;
+  }
+  .wrapper-head {
+    background-color: #333333;
+    position: fixed;
+    width: 100%;
+  }
+  .wrapper-head .head-content {
+    padding: 8px 72px;
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+  .wrapper-head .head-content ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .wrapper-head .head-content ul li.navs {
+    margin: 0 24px;
+  }
+  .wrapper-head .head-content ul li.navs a {
+    text-decoration: none;
+    color: #F9F9F9;
+    font-size: 16px;
+    font-weight: 500;
+  }
+  .wrapper-head .head-content ul li.navs a:hover, .wrapper-head .head-content ul li.navs a.active {
+    color: darkorange;
+  }
+  .wrapper-hero {
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.1)), to(rgba(0, 0, 0, 0.1))), url(../img/wood_background.jpg) no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(../images/bg.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 114vh;
+  }
+  .wrapper-hero .hero-content {
+    padding: 48px 96px;
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+  .wrapper-hero .hero-content h1 {
+    font-size: 48px;
+    font-weight: 600;
+    color: #F9F9F9;
+    line-height: 32px;
+  }
+  .wrapper-hero .hero-content p {
+    font-size: 18px;
+    font-weight: 500;
+    color: #F9F9F9;
+    line-height: 24px;
+  }
+  .wrapper-hero .hero-content input {
+    margin: 8px 0;
+    font-family: ‘Poppins’, sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    color: #272727;
+    line-height: 24px;
+    padding: 8px 24px;
+  }
+  .wrapper-hero .hero-content input:focus {
+    outline: 0;
+  }
+  .wrapper-hero .hero-sections {
+    padding: 0 32px;
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+  .wrapper-hero .hero-sections .sections-box {
+    float: left;
+    width: 23%;
+    margin: 1%;
+    background-color: #F9F9F9;
+  }
+  .wrapper-hero .hero-sections .sections-box p {
+    font-size: 18px;
+    font-weight: 500;
+    color: #272727;
+    line-height: 24px;
+    padding: 8px 24px;
+  }
+  .wrapper-hero .hero-sections .sections-box:hover {
+    background-color: darkorange;
+  }
+
+
+

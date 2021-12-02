@@ -1,0 +1,263 @@
+/* NAV BAR STUFF */
+.header_CFG {
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.header_CFG nav {
+  background: rgb(58, 53, 53);
+}
+
+.header_CFG ul {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  list-style: none;
+}
+
+.header_CFG li:not(:last-child) {
+  margin-right: 2rem; /* 32px. 1rem=16px */
+}
+
+.header_CFG a {
+  display: flex;
+  align-items: center;
+  position: relative;
+  height: 2.5rem;
+  color: rgb(241, 235, 209);
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 18px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.header_CFG a:hover {
+  color: rgb(248, 167, 60);
+}
+
+.header_CFG a::before {
+  content: "";
+  display: block;
+  height: 2px;
+  background-color:#fff;
+  position: absolute;
+  top: 0;
+  width: 0%;
+  transition: all ease-in-out 250ms;
+}
+
+.header_CFG a:hover::before {
+  width: 100%;
+}
+
+.header_CFG a *:not(:last-child) {
+  margin-right: .5rem;
+}
+
+/*SUBSCRIBE BUTTON*/
+
+
+.btn {
+  position:relative;
+  left: 40%;
+  padding: 15px 20px;
+  background:rgb(241, 235, 209);
+  font-size: 18px;
+  display:inline-block;
+  text-decoration: none;  
+  color:rgb(150, 5, 30);
+  cursor: pointer;
+  font-weight: 500;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  transition: 0.5s;
+  border-radius: 10px;
+}
+
+.btn:hover{
+letter-spacing: 4px;
+}
+
+#popup {
+  position: fixed;
+  top: -100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1000;
+  background:rgb(241, 235, 209);
+  width: 450px;
+  padding: 80px 50px 50px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.8);
+  transition: 0.5s;
+  visibility: hidden;
+}
+
+#popup.active 
+{
+  visibility: visible;
+  top: 50%
+}
+
+#popup .content
+{
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#popup .content img {
+  max-width: 80px;
+}
+
+#popup .content h2{
+  font-size: 24px;
+  font-weight: 500;
+  color:rgb(58, 53, 53);
+  margin: 20px 0 10px;
+}
+
+#popup .content .inputBox {
+  position: relative;
+  width: 100%;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#popup .content .inputBox input{
+  width: 100%;
+  border: 1px solid rgba(0,0,0,0.2);
+  padding: 15px;
+  outline: none;
+  font-size: 18px;
+}
+
+#popup .content .inputBox input[type="submit"]
+{
+  max-width: 150px;
+  background: rgb(150, 5, 30);
+  color:rgb(241, 235, 209);
+  border: none;
+}
+
+.close {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  cursor: pointer;
+}
+
+h1 {
+    text-align: left;
+    font-size: 8em;
+    margin-bottom: 300px;
+    margin-top: 7.5px;
+    line-height: 1;
+    text-decoration: none;
+    color: rgb(241, 235, 209);
+    font-family: 'Dancing Script', cursive;
+    padding-top: 30px;
+    padding-left: 20px;
+}
+
+body {
+    background: #000 url(../images/ChristmasBackground.jpeg) fixed no-repeat center / cover; 
+    /*background-size: 1700px 900px;*/
+  }
+
+*{
+  box-sizing: border-box;
+}
+
+.wrapper{   /* search bar div */
+  position: relative;
+  top: 50%;
+  left: 25%;
+
+  transform: translate(-40% -25%);
+  background:rgb(150, 5, 30);
+  max-width: 550px;
+  width:100%;
+  padding: 15px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.wrapper .input{
+  width: 85%;
+  padding: 15px 20px;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.searchbtn{
+  background:rgb(241, 235, 209);
+  width: 10%;
+  border-radius: 5px;
+  position: relative; 
+  cursor: pointer;
+}
+
+.searchbtn .fa{
+  position: absolute;
+  top: 30%;
+  left: 30%;
+  transform: translate(-30% -30%);
+  font-size: 20px;
+}
+
+.flexContainer{
+  display: flex;
+  flex-direction: row;
+  flex-flow: row;
+  color:white;
+  align-content: center;
+  align-items: center;
+  max-width: 1500px;
+  
+}
+
+.flexItem {
+  display: flex;
+  padding-left: 20px;
+  flex-basis: 200px;
+  flex-grow: 1;
+  flex-shrink: 0;
+  justify-content: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight:bold;
+}
+
+.flexItem :hover {
+  color: rgb(248, 167, 60);
+}
+
+
+main {
+  position: relative;
+  top: calc(5rem + 12vw);
+  height: calc(100vh - 7.5rem - 12vw);
+}
+
+main .flexContainer {
+  padding: 2rem;
+  height: 100%;
+  overflow: auto;
+  flex-wrap: wrap;  /* images wrap down, show as list when on smaller displays */
+}
+
+.bigwrap {
+  flex-wrap: wrap;
+  background-color: rgba(48, 4, 4, 0.075);
+}
+
+
+
